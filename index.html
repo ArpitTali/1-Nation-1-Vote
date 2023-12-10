@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Selection - 1 Nation 1 Vote</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .logo{
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img{
+            object-fit: cover;
+            height: 45px;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main img{
+            object-fit: cover;
+            height: 200px;
+        }
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 550;
+            font-family: sans-serif;
+        }
+        .p1{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+        main{
+            justify-content: center;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 25px;
+            font-family: sans-serif;
+            margin-bottom: 0;
+        }
+        .btn1{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn1.test-completed::after {
+            content: "English";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn2{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn2.test-completed::after {
+            content: "हिंदी";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn3{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn3.test-completed::after {
+            content: "ଓଡିଆ";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn4{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn4.test-completed::after {
+            content: "বাংলা";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn5{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn5.test-completed::after {
+            content: "मराठी";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn6{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn6.test-completed::after {
+            content: "ગુજરાતી";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn7{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn7.test-completed::after {
+            content: "తెలుగు";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn8{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn8.test-completed::after {
+            content: "தமிழ்";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn9{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn9.test-completed::after {
+            content: "ਪੰਜਾਬੀ";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn10{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn10.test-completed::after {
+            content: "اردو";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn11{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn11.test-completed::after {
+            content: "অসমীয়া";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        .btn12{
+            display: inline-block;
+            background: #B5B1B1;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            border-radius:5px;
+            position: relative;
+        }
+        .btn12.test-completed::after {
+            content: "മലയാളം";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(19,126,178);
+            line-height: 2.5;
+            top: 0;
+            font-weight: bold;
+        }
+        
+        .btn1:hover:after {
+            content: "Welcome";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn2:hover:after {
+            content: "स्वागत";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn3:hover:after {
+            content: "ସ୍ୱାଗତ";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn4:hover:after {
+            content: "স্বাগত";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn5:hover:after {
+            content: "स्वागत";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn6:hover:after {
+            content: "સ્વાગત છે";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn7:hover:after {
+            content: "స్వాగతం";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn8:hover:after {
+            content: "வரவேற்பு";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn9:hover:after {
+            content: "ਸੁਆਗਤ ਹੈ";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn10:hover:after {
+            content: "خوش آمدید";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn11:hover:after {
+            content: "স্বাগতম";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .btn12:hover:after {
+            content: "സ്വാഗതം";
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="1 nation 1 vote main logo.png">
+    </div>
+    <hr>
+    <div class="main">
+        <img src="main logo.png">
+    </div>
+    <p>Select your Prefered Language to Enter the Website</p>
+    <br>
+    <p class="p1">वेबसाइट में प्रवेश करने के लिए अपनी पसंदीदा भाषा चुनें</p>
+    <br><br>
+    <main>
+        <a href="Home.english.html" class="btn1 test-completed"></a>
+        <a href="#" class="btn2 test-completed"></a>
+        <a href="#" class="btn3 test-completed"></a>
+        <a href="#" class="btn4 test-completed"></a>
+        <a href="#" class="btn5 test-completed"></a>
+        <a href="#" class="btn6 test-completed"></a>
+        <a href="#" class="btn7 test-completed"></a>
+        <a href="#" class="btn8 test-completed"></a>
+        <a href="#" class="btn9 test-completed"></a>
+        <a href="#" class="btn10 test-completed"></a>
+        <a href="#" class="btn11 test-completed"></a>
+        <a href="#" class="btn12 test-completed"></a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Verify - 1 Nation 1 Vote</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            width: 90%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 60px;
+        }
+        .logo .img1 {
+            object-fit: cover;
+            height: 60px;
+        }
+        .logo .img2 {
+            object-fit: cover;
+            height: 60px;
+        }
+        .link {
+            background-image: linear-gradient(to right,rgb(1,6,75) , rgb(27,176,220));
+            display: absolute;
+        }
+        .btn1{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn1.test-completed::after {
+            content: "1 Nation 1 Vote ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn2{
+            display: inline-block;
+            text-decoration: none;
+            width: 100px;
+            height: 45px;
+            position: relative;
+        }
+        .btn2.test-completed::after {
+            content: "About ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn3{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn3.test-completed::after {
+            content: "Contact Us ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .backmain{
+            display: flex;
+            justify-content: center;
+        }
+        .back{
+            background-image: linear-gradient(to right,rgb(69, 80, 246) , rgb(135, 201, 222));
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            border-radius: 10px;
+        }
+        .btn4{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn4.test-completed::after {
+            content: "Back ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+
+        body{
+	        margin: 0;
+	        padding: 0;
+	        height: 74vh;
+                   
+        }
+        
+        .container{
+        	display: flex;
+        	flex-flow: column;
+        	height: 100%;
+        	align-items: space-around;
+        	justify-content: center;
+        }
+        
+        .userInput{
+        	display: flex;
+        	justify-content: center;
+        }
+        
+        input{
+        	margin: 10px;
+        	height: 35px;
+        	width: 65px;
+        	border: 1;
+        	border-radius: 5px;
+        	text-align: center;
+        	font-family: arimo;
+        	font-size: 1.2rem;
+        	background: #eef2f3;
+        
+        }
+        
+        h1{
+        	text-align: center;
+            font-weight: 500;
+        	font-family: cursive;
+        	color: rgb(0, 0, 0);
+        } 
+        button{
+        	width: 150px;
+        	height: 40px;
+        	margin: 25px auto 0px auto;
+        	font-family: arimo;
+        	font-size: 1.1rem;
+        	border: none;
+        	border-radius: 5px;
+        	letter-spacing: 2px;
+        	cursor: pointer;
+        	background: #1caad1;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #6b95f6, #4797dd);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #2279dd, #72acee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .button{
+            width: 150px;
+        	height: 40px;
+        	margin: 25px auto 0px auto;
+        	font-family: arimo;
+        	font-size: 1.1rem;
+        	border: none;
+        	border-radius: 5px;
+        	letter-spacing: 2px;
+        	cursor: pointer; 
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <script>
+        function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+		}
+    </script>
+
+    <div class="logo">
+        <img src="1 nation 1 vote main logo.png" class="img1">
+        <img src="main logo.png" class="img2">
+    </div>
+    <div class="link">
+        <a href="register.english.html" class="btn1 test-completed"></a>
+        <a href="about.english.html" class="btn2 test-completed"></a>
+        <a href="contactus.english.html" class="btn3 test-completed"></a>
+    </div>
+    <div class="backmain">
+        <div class="back">
+            <a href="register.english.html" class="btn4 test-completed"></a>
+        </div>
+    </div>
+
+    <div class="container">
+		<h1><u>ENTER OTP</u></h1>
+		<div class="userInput">
+			<input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+			<input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+			<input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+			<input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+			<input type="text" id="fifth" maxlength="1">
+		</div>
+        <a href="selection.english.MLA.html" class="button"><Button>Confirm</Button></a>
+	</div>
+    
+</body>
+</html>

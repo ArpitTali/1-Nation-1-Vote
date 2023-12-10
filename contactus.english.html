@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - 1 Nation 1 Vote</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            width: 90%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 60px;
+        }
+        .logo .img1 {
+            object-fit: cover;
+            height: 60px;
+        }
+        .logo .img2 {
+            object-fit: cover;
+            height: 60px;
+        }
+        .link {
+            background-image: linear-gradient(to right,rgb(1,6,75) , rgb(27,176,220));
+            display: absolute;
+        }
+        .btn1{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn1.test-completed::after {
+            content: "1 Nation 1 Vote ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn2{
+            display: inline-block;
+            text-decoration: none;
+            width: 100px;
+            height: 45px;
+            position: relative;
+        }
+        .btn2.test-completed::after {
+            content: "About ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn3{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn3.test-completed::after {
+            content: "Contact Us ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .backmain{
+            display: flex;
+            justify-content: center;
+        }
+        .back{
+            background-image: linear-gradient(to right,rgb(69, 80, 246) , rgb(135, 201, 222));
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            border-radius: 10px;
+        }
+        .btn4{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn4.test-completed::after {
+            content: "Back ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn5{
+            background-image: linear-gradient(to right,rgb(69, 80, 246) , rgb(135, 201, 222));
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+            font-size: 25px;
+            background-color: rgb(208, 209, 209);
+            border-radius: 10px;
+        }
+        .btn5.test-completed::after {
+            content: "Submit";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(0, 0, 0);
+            line-height: 1.8;
+            top: 0;
+        }
+
+
+
+        .center{
+            display: flex;
+            margin: 0px 50px;
+            justify-content: flex-start;
+        }
+        .centre{
+            display: flex;
+            justify-content: center;
+        }
+        .centre a{
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact_form {
+            background-color: #ffffff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-family: sans-serif;
+          }
+          
+        .row label{
+            color: #000000;
+            font-size: 30px;
+            margin-left: 40px;
+        }
+        input{
+            width: 500px;
+        }
+        textarea{
+            width: 500px;
+        }
+          
+        input[type=text], textarea {
+            background-color: #ffffff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 5px;
+            color: #000000;
+            margin-left: 45px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 5px 5px 10px #9bbdbd;
+        }
+          
+        input[type=text] {
+            height: 35px;
+        }
+          
+        .submit{
+            background-color: #ff7b25;
+            color: #FFFFFF;
+            border-radius: 10px;
+            font-size: 18px;
+            margin-left: 10px;
+            box-shadow: 5px 5px 5px #3e4444;
+         }
+         .img img{
+            object-fit: cover;
+            height: 400px;
+         }
+           
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="1 nation 1 vote main logo.png" class="img1">
+        <img src="main logo.png" class="img2">
+    </div>
+    <div class="link">
+        <a href="register.english.html" class="btn1 test-completed"></a>
+        <a href="about.english.html" class="btn2 test-completed"></a>
+        <a href="contactus.english.html" class="btn3 test-completed"></a>
+    </div>
+    <div class="backmain">
+        <div class="back">
+            <a href="Home.english.html" class="btn4 test-completed"></a>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="center">
+        <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <label class="required" for="name"><u>Your name</u></label><br />
+              <input id="name" class="input" placeholder="Enter Your Full Name" name="name" type="text" value="" size="30" /><br />
+              <span id="name_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+              <label class="required" for="email"><u>Your email</u></label><br />
+              <input id="email" class="input" placeholder="Enter Your Email Id" name="email" type="text" value="" size="30" /><br />
+              <span id="email_validation" class="error_message"></span>
+            </div>
+            <div class="row">
+              <label class="required" for="message"><u>Your message</u></label><br />
+              <textarea id="message" class="input" placeholder="Enter Your Message" name="message" rows="7" cols="30"></textarea><br />
+              <span id="message_validation" class="error_message"></span>
+            </div>
+              
+          </form>
+          <div class="img">
+            <img src="main logo.png" alt="">
+          </div>
+    </div>
+    <div class="centre">
+        <a href="Home.english.html" class="btn5 test-completed"></a>
+      </div>
+      <br><br><br><br>
+
+
+
+      
+</body>
+</html>

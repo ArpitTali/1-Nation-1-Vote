@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - 1 Nation 1 Vote</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .logo{
+            width: 90%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0 60px;
+        }
+        .logo .img1 {
+            object-fit: cover;
+            height: 60px;
+        }
+        .logo .img2 {
+            object-fit: cover;
+            height: 60px;
+        }
+        .link {
+            background-image: linear-gradient(to right,rgb(1,6,75) , rgb(27,176,220));
+            display: absolute;
+        }
+        .btn1{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn1.test-completed::after {
+            content: "1 Nation 1 Vote ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn2{
+            display: inline-block;
+            text-decoration: none;
+            width: 100px;
+            height: 45px;
+            position: relative;
+        }
+        .btn2.test-completed::after {
+            content: "About ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn3{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            height: 45px;
+            position: relative;
+        }
+        .btn3.test-completed::after {
+            content: "Contact Us ˅";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2.5;
+            top: 0;
+        }
+        .btn4{
+            display: inline-block;
+            text-decoration: none;
+            width: 200px;
+            font-size: 20px;
+            height: 35px;
+            position: relative;
+        }
+        .btn4.test-completed::after {
+            content: " 1 Nation 1 Vote";
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+            line-height: 2;
+            top: 0;
+        }
+        .sssb{
+            width: 100%;
+        }
+        .one {
+            background-image: linear-gradient(to right,rgb(1,6,75) , rgb(27,176,220));
+            display: flex;
+            justify-content: center;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        .center h1{
+            font-family: sans-serif;
+            font-size: 25px;
+        }
+        .center p{
+            font-size: 20px;
+            text-align: center; 
+        }
+
+
+
+
+
+
+        .rev-section{
+            margin: auto;
+            padding: 0 1rem;
+            max-width: 1100px;
+            text-align: center;
+        }
+
+        .title{
+            font-size: 25px;
+            text-transform: uppercase;
+            color: rgb(50, 50, 50);
+            margin-bottom: .5rem;
+        }
+        .note{
+            font-size: 1.2rem;
+            font-weight: 550;
+            color: rgb(150, 150, 150);
+            font-style: italic;
+            color: rgb(11, 63, 97);
+        
+        }
+        
+        .reviews{
+            margin: 2rem auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .review{
+            margin: 0 1rem;
+            min-width: 300px;
+            flex: 1;
+        }
+        
+        .head-review{
+           margin: 1.75rem auto;
+           width: 150px;
+           height: 150px;
+        }
+        .img{
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 50%;
+           box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+        }
+        
+        .body-review{
+           background-color: rgb(238, 238, 238);
+           padding: 2.5rem;
+           box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+        }
+        .name-review{
+          font-size: 1.5rem;
+          color: rgb(50, 50, 50);
+          margin-bottom: .25rem;
+        } 
+        .place-review{
+          color: rgb(16, 82, 126);
+          font-style: italic;
+        }
+        .rating{
+          color: rgb(253, 180, 42);
+          margin: 1rem 0;
+        }
+        .desc-review{
+          line-height: 1.5rem;
+          letter-spacing: 1px;
+          color: rgb(150, 150, 150);
+        }
+        
+        @media (max-width: 678px){
+          .review{
+            margin-top: 1.5rem;
+          }
+        }
+
+
+        
+
+        .last{
+            
+            display: flex;
+            justify-content: space-around;
+            font-family: serif;
+        }
+        .phone{
+            display: flex;
+        }
+        .phone img{
+            object-fit: cover;
+            height: 20px;
+        }
+        .phone h4{
+            margin: 0;
+            padding: 0;
+        }
+        .email{
+            display: flex;
+        }
+        .email img{
+            object-fit: cover;
+            height: 15px;
+        }
+        .email h4{
+            margin: 0;
+            padding: 0;
+        }
+        .social{
+            display: flex;
+        }
+        .social .img11{
+            object-fit: cover;
+            height: 25px;
+        }
+        .social .img12{
+            object-fit: cover;
+            height: 25px;
+        }
+        .address h4{
+            font-weight: 500;
+        }
+        .contact h4{
+            font-weight: 500;
+        }
+        .lastlogo{
+            display: flex;
+            justify-content: center;
+        }
+        .lastlogo img{
+            object-fit: cover;
+            height: 350px;
+        }
+        .copy h4{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            display: flex;
+            justify-self: center;
+            font-size: small;
+        }
+        .copy{
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            overflow: hidden;
+            margin: 20px;
+        }
+        .pic img{
+            object-fit: cover;
+            height: 70px;
+        }
+        .hr{
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="1 nation 1 vote main logo.png" class="img1">
+        <img src="main logo.png" class="img2">
+    </div>
+    <div class="link">
+        <a href="register.english.html" class="btn1 test-completed"></a>
+        <a href="about.english.html" class="btn2 test-completed"></a>
+        <a href="contactus.english.html" class="btn3 test-completed"></a>
+    </div>
+    <img src="sssb.jpg" class="sssb">
+    <div class="one">
+        <h1 class="btn4 test-completed"></h1>
+    </div>
+    <br>
+    <div class="center">
+        <p>Through this webpage and the application given you could easily vote your candidate sitting just in your home. For voting it would require your address your details like Addhaar Number, Name, etc.</p>
+    </div>
+
+
+
+
+
+    <div class="rev-section">
+
+        <h2 class="title"><u>Reviews</u></h2>
+        <p class="note">Here are the reviews given by the users</p>
+        
+        <div class="reviews">
+        
+        <div class="review">
+           <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" width="250px" class="img">
+           </div>
+           <div class="body-review">
+              <div class="name-review">Nathan D.</div>
+              <div class="place-review">Germany</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half"></i>
+              </div>
+              <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+           </div>
+        </div>
+        <div class="review">
+           <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="250px" class="img">
+           </div>
+           <div class="body-review">
+              <div class="name-review">Mary Will</div>
+              <div class="place-review">Paris</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+              </div>
+              <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+           </div>
+        </div>
+        <div class="review">
+           <div class="head-review">
+              <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" width="250px" class="img">
+           </div>
+           <div class="body-review">
+              <div class="name-review">Kevin Tuck</div>
+              <div class="place-review">New York</div>
+              <div class="rating">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star-half"></i>
+              </div>
+              <div class="desc-review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eligendi suscipit illum officia ex eos.</div>
+           </div>
+        </div>
+        
+        </div>
+        
+        </div>
+        <hr class="hr">
+
+    
+
+        <div class="finish">
+            <div class="last">
+                <div class="contact">
+                    <h3>Contact Us</h2>
+                    <div class="phone">
+                        <img src="phone.png">
+                        &nbsp;&nbsp;
+                        <h4>8480132050</h4>
+    
+                    </div>
+                    <br>
+                    <div class="email">
+                        <img src="email.png">
+                        &nbsp;&nbsp;
+                        <h4>contactusarpittali@gmail.com</h4>
+    
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social">
+                        <a href="https://www.facebook.com/arpit.tali"><img src="facebook.png" class="img11"></a>
+                        <a href="https://www.youtube.com/@arpittali17"><img src="youtube.png" class="img12"></a>
+                        <a href="https://www.instagram.com/arpittali_official/"><img src="instagram.jpg" class="img12"></a>
+    
+                    </div>
+                </div>
+                <div class="address">
+                        <h3>Address</h3>
+                        <h4>1 Nation 1 Vote Authority of India</h4>
+                        <h4>Government of India (GoI)</h4>
+                        <h4>Bangla Sahib Road, Behind Kali Mandir, Gole Market</h4>
+                        <h4>New Delhi - 110001</h4>
+                        <br>
+                        <h4>UIDAI Regional Office, Delhi</h4>
+                        <h4>Ground Floor, Supreme Court</h4>
+                        <h4>Metro Station, Pragati Maidan,</h4>
+                        <h4>New Delhi-110001</h4>
+    
+                </div>
+                <div class="lastlogo">
+                    <img src="main logo.png">
+                </div>
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="copy">
+            <div class="text">
+                <h4>Copyright © 2023 1 Nation 1 Vote All Rights Reserved</h4>
+                <h4>Owner : Arpit Tali</h4>
+            </div>
+            <div class="pic">
+                <img src="main logo.png">
+            </div>
+
+        </div>
+</body>
+</html>
